@@ -11,7 +11,7 @@ exception Found of int
 let lGrid = 6 and cGrid = 7 and toAlign = 4
 
 let getInitialSituation () =
-	let grid = Array.create_matrix lGrid cGrid NOPLAYER
+	let grid = Array.make_matrix lGrid cGrid NOPLAYER
 	in grid
 	
 let getPossibleMoves s =
@@ -32,7 +32,7 @@ let validMove p s m =
 	Move(i) -> s.(lGrid-1).(i) = NOPLAYER
 
 let copySituation s = 
-	let newSituation = Array.create_matrix lGrid cGrid NOPLAYER
+	let newSituation = Array.make_matrix lGrid cGrid NOPLAYER
 	in for i = 0 to lGrid-1 do
 		for j = 0 to cGrid-1 do
 			newSituation.(i).(j) <- s.(i).(j)

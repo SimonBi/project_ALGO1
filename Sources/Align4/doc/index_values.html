@@ -1,0 +1,144 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<link rel="Start" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Align4Game" rel="Chapter" href="Align4Game.html">
+<link title="Align4GUI" rel="Chapter" href="Align4GUI.html">
+<link title="Align4Heuristic" rel="Chapter" href="Align4Heuristic.html">
+<link title="Align4Mechanism" rel="Chapter" href="Align4Mechanism.html">
+<link title="Align4Strategy" rel="Chapter" href="Align4Strategy.html"><title>Index of values</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Index of values</h1>
+<table>
+<tr><td align="left"><br>C</td></tr>
+<tr><td><a href="Align4Mechanism.html#VALcGrid">cGrid</a> [<a href="Align4Mechanism.html">Align4Mechanism</a>]</td>
+<td><div class="info">
+nombre de colonne de la grille
+</div>
+</td></tr>
+<tr><td align="left"><br>D</td></tr>
+<tr><td><a href="Align4GUI.html#VALdisplayGame">displayGame</a> [<a href="Align4GUI.html">Align4GUI</a>]</td>
+<td><div class="info">
+fonction affichant la situation
+</div>
+</td></tr>
+<tr><td><a href="Align4GUI.html#VALdisplayMove">displayMove</a> [<a href="Align4GUI.html">Align4GUI</a>]</td>
+<td><div class="info">
+fonction affichant le joueur du tour courant
+</div>
+</td></tr>
+<tr><td><a href="Align4GUI.html#VALdisplayPlayerWin">displayPlayerWin</a> [<a href="Align4GUI.html">Align4GUI</a>]</td>
+<td><div class="info">
+fonction affichant le vainqueur lorsque la partie est terminée par un match non-nul
+</div>
+</td></tr>
+<tr><td><a href="Align4GUI.html#VALdisplayTie">displayTie</a> [<a href="Align4GUI.html">Align4GUI</a>]</td>
+<td><div class="info">
+fonction affichant le match nul
+</div>
+</td></tr>
+<tr><td align="left"><br>G</td></tr>
+<tr><td><a href="Align4Game.html#VALgame">game</a> [<a href="Align4Game.html">Align4Game</a>]</td>
+<td><div class="info">
+fonction de jeu prenant en paramètre un tableau de stratégies (qui à un joueur et une situation renvoie un coup à jouer) et un tableau de joueur (typiquement <code class="code">[|Player(0);Player(1)|]</code>)
+</div>
+</td></tr>
+<tr><td><a href="Align4Mechanism.html#VALgameEnded">gameEnded</a> [<a href="Align4Mechanism.html">Align4Mechanism</a>]</td>
+<td><div class="info">
+fonction renvoyant vrai si le situation placée en paramètre est terminale
+</div>
+</td></tr>
+<tr><td><a href="Align4Mechanism.html#VALgetInitialSituation">getInitialSituation</a> [<a href="Align4Mechanism.html">Align4Mechanism</a>]</td>
+<td><div class="info">
+fonction générant la grille initiale vide
+</div>
+</td></tr>
+<tr><td><a href="Align4GUI.html#VALgetNearestMove">getNearestMove</a> [<a href="Align4GUI.html">Align4GUI</a>]</td>
+<td><div class="info">
+fonction permettant de récupérer un coup joué à la souris
+</div>
+</td></tr>
+<tr><td><a href="Align4Mechanism.html#VALgetPossibleMoves">getPossibleMoves</a> [<a href="Align4Mechanism.html">Align4Mechanism</a>]</td>
+<td><div class="info">
+fonction rendant la liste des coups possibles dans la situation passée en paramètre
+</div>
+</td></tr>
+<tr><td align="left"><br>H</td></tr>
+<tr><td><a href="Align4Mechanism.html#VALhasWin">hasWin</a> [<a href="Align4Mechanism.html">Align4Mechanism</a>]</td>
+<td><div class="info">
+fonction renvoyant vrai si le joueur a gagné dans la situation
+</div>
+</td></tr>
+<tr><td><a href="Align4Strategy.html#VALhumanPlayerStrategy">humanPlayerStrategy</a> [<a href="Align4Strategy.html">Align4Strategy</a>]</td>
+<td><div class="info">
+Stratégie pour le joueur humain : étant donné un joueur et une situation, retourne un coup récupéré à la souris
+</div>
+</td></tr>
+<tr><td align="left"><br>L</td></tr>
+<tr><td><a href="Align4Mechanism.html#VALlGrid">lGrid</a> [<a href="Align4Mechanism.html">Align4Mechanism</a>]</td>
+<td><div class="info">
+nombre de ligne de la grille
+</div>
+</td></tr>
+<tr><td align="left"><br>M</td></tr>
+<tr><td><a href="Align4Strategy.html#VALmaxDepth">maxDepth</a> [<a href="Align4Strategy.html">Align4Strategy</a>]</td>
+<td><div class="info">
+profondeur de recherche maximale pour l'algorithme minimax
+</div>
+</td></tr>
+<tr><td><a href="Align4Strategy.html#VALminimaxStrategy">minimaxStrategy</a> [<a href="Align4Strategy.html">Align4Strategy</a>]</td>
+<td><div class="info">
+Stratégie minimax (à compléter) : étant donné une heuristique, un joueur et une situation, retourne le meilleur coup possible selon l'algorithme minimax
+</div>
+</td></tr>
+<tr><td align="left"><br>N</td></tr>
+<tr><td><a href="Align4Heuristic.html#VALnullHeuristic">nullHeuristic</a> [<a href="Align4Heuristic.html">Align4Heuristic</a>]</td>
+<td><div class="info">
+heuristique renvoyant une grande valeur lors d'une victoire, une valeur fortement négative dans le cas d'une situation perdante et 0.
+</div>
+</td></tr>
+<tr><td align="left"><br>O</td></tr>
+<tr><td><a href="Align4Mechanism.html#VALotherPlayer">otherPlayer</a> [<a href="Align4Mechanism.html">Align4Mechanism</a>]</td>
+<td><div class="info">
+fonction rendant le joueur adverse au joueur placé en paramètre
+</div>
+</td></tr>
+<tr><td align="left"><br>P</td></tr>
+<tr><td><a href="Align4Mechanism.html#VALplay">play</a> [<a href="Align4Mechanism.html">Align4Mechanism</a>]</td>
+<td><div class="info">
+fonction jouant le coup pour le joueur dans la situation donnée en paramètre et renvoyant la nouvelle situation
+</div>
+</td></tr>
+<tr><td align="left"><br>R</td></tr>
+<tr><td><a href="Align4Strategy.html#VALrandomStrategy">randomStrategy</a> [<a href="Align4Strategy.html">Align4Strategy</a>]</td>
+<td><div class="info">
+Stratégie random : étant donné un joueur et une situation, retourne un coup (possible) aléatoire
+</div>
+</td></tr>
+<tr><td align="left"><br>T</td></tr>
+<tr><td><a href="Align4Mechanism.html#VALtie">tie</a> [<a href="Align4Mechanism.html">Align4Mechanism</a>]</td>
+<td><div class="info">
+fonction renvoyant vrai s'il n'y a plus de coups possibles (si personne n'a gagné alors c'est un match nul)
+</div>
+</td></tr>
+<tr><td><a href="Align4Mechanism.html#VALtoAlign">toAlign</a> [<a href="Align4Mechanism.html">Align4Mechanism</a>]</td>
+<td><div class="info">
+nombre de pion à aligner
+</div>
+</td></tr>
+<tr><td align="left"><br>V</td></tr>
+<tr><td><a href="Align4Mechanism.html#VALvalidMove">validMove</a> [<a href="Align4Mechanism.html">Align4Mechanism</a>]</td>
+<td><div class="info">
+fonction rendant vrai le coup est possible pour le joueur dans la situation
+</div>
+</td></tr>
+</table>
+</body>
+</html>

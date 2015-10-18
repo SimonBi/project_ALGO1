@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Align4Heuristic.html">
+<link rel="next" href="Align4Strategy.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Align4Game" rel="Chapter" href="Align4Game.html">
+<link title="Align4GUI" rel="Chapter" href="Align4GUI.html">
+<link title="Align4Heuristic" rel="Chapter" href="Align4Heuristic.html">
+<link title="Align4Mechanism" rel="Chapter" href="Align4Mechanism.html">
+<link title="Align4Strategy" rel="Chapter" href="Align4Strategy.html"><title>Align4Mechanism</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Align4Heuristic.html" title="Align4Heuristic">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Align4Strategy.html" title="Align4Strategy">Next</a>
+</div>
+<h1>Module <a href="type_Align4Mechanism.html">Align4Mechanism</a></h1>
+
+<pre><span class="keyword">module</span> Align4Mechanism: <code class="code">sig</code> <a href="Align4Mechanism.html">..</a> <code class="code">end</code></pre><div class="info module top">
+Module de fonctionnement interne du jeu<br>
+</div>
+<hr width="100%">
+
+<pre><code><span id="TYPEplayer"><span class="keyword">type</span> <code class="type"></code>player</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTplayer.Player"><span class="constructor">Player</span></span> <span class="keyword">of</span> <code class="type">int</code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTplayer.NOPLAYER"><span class="constructor">NOPLAYER</span></span></code></td>
+
+</tr></table>
+
+<div class="info ">
+type joueur<br>
+</div>
+
+
+<pre><span id="TYPEsituation"><span class="keyword">type</span> <code class="type"></code>situation</span> = <code class="type"><a href="Align4Mechanism.html#TYPEplayer">player</a> array array</code> </pre>
+<div class="info ">
+type situation<br>
+</div>
+
+
+<pre><code><span id="TYPEmove"><span class="keyword">type</span> <code class="type"></code>move</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTmove.Move"><span class="constructor">Move</span></span> <span class="keyword">of</span> <code class="type">int</code></code></td>
+
+</tr></table>
+
+<div class="info ">
+type coup<br>
+</div>
+
+
+<pre><span id="VALlGrid"><span class="keyword">val</span> lGrid</span> : <code class="type">int</code></pre><div class="info ">
+nombre de ligne de la grille<br>
+</div>
+
+<pre><span id="VALcGrid"><span class="keyword">val</span> cGrid</span> : <code class="type">int</code></pre><div class="info ">
+nombre de colonne de la grille<br>
+</div>
+
+<pre><span id="VALtoAlign"><span class="keyword">val</span> toAlign</span> : <code class="type">int</code></pre><div class="info ">
+nombre de pion à aligner<br>
+</div>
+
+<pre><span id="VALgetInitialSituation"><span class="keyword">val</span> getInitialSituation</span> : <code class="type">unit -> <a href="Align4Mechanism.html#TYPEsituation">situation</a></code></pre><div class="info ">
+fonction générant la grille initiale vide<br>
+</div>
+
+<pre><span id="VALotherPlayer"><span class="keyword">val</span> otherPlayer</span> : <code class="type"><a href="Align4Mechanism.html#TYPEplayer">player</a> -> <a href="Align4Mechanism.html#TYPEplayer">player</a></code></pre><div class="info ">
+fonction rendant le joueur adverse au joueur placé en paramètre<br>
+</div>
+
+<pre><span id="VALgetPossibleMoves"><span class="keyword">val</span> getPossibleMoves</span> : <code class="type"><a href="Align4Mechanism.html#TYPEsituation">situation</a> -> <a href="Align4Mechanism.html#TYPEmove">move</a> list</code></pre><div class="info ">
+fonction rendant la liste des coups possibles dans la situation passée en paramètre<br>
+</div>
+
+<pre><span id="VALvalidMove"><span class="keyword">val</span> validMove</span> : <code class="type"><a href="Align4Mechanism.html#TYPEplayer">player</a> -><br>       <a href="Align4Mechanism.html#TYPEsituation">situation</a> -> <a href="Align4Mechanism.html#TYPEmove">move</a> -> bool</code></pre><div class="info ">
+fonction rendant vrai le coup est possible pour le joueur dans la situation<br>
+</div>
+
+<pre><span id="VALplay"><span class="keyword">val</span> play</span> : <code class="type"><a href="Align4Mechanism.html#TYPEplayer">player</a> -><br>       <a href="Align4Mechanism.html#TYPEsituation">situation</a> -><br>       <a href="Align4Mechanism.html#TYPEmove">move</a> -> <a href="Align4Mechanism.html#TYPEsituation">situation</a></code></pre><div class="info ">
+fonction jouant le coup pour le joueur dans la situation donnée en paramètre et renvoyant la nouvelle situation<br>
+</div>
+
+<pre><span id="VALgameEnded"><span class="keyword">val</span> gameEnded</span> : <code class="type"><a href="Align4Mechanism.html#TYPEsituation">situation</a> -> bool</code></pre><div class="info ">
+fonction renvoyant vrai si le situation placée en paramètre est terminale<br>
+</div>
+
+<pre><span id="VALhasWin"><span class="keyword">val</span> hasWin</span> : <code class="type"><a href="Align4Mechanism.html#TYPEplayer">player</a> -> <a href="Align4Mechanism.html#TYPEsituation">situation</a> -> bool</code></pre><div class="info ">
+fonction renvoyant vrai si le joueur a gagné dans la situation<br>
+</div>
+
+<pre><span id="VALtie"><span class="keyword">val</span> tie</span> : <code class="type"><a href="Align4Mechanism.html#TYPEsituation">situation</a> -> bool</code></pre><div class="info ">
+fonction renvoyant vrai s'il n'y a plus de coups possibles (si personne n'a gagné alors c'est un match nul)<br>
+</div>
+</body></html>

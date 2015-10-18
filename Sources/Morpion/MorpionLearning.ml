@@ -56,7 +56,7 @@ let getConfig s situation=
 	done
 
 let copyConfig situation =
-	let a = Array.create_matrix (Array.length situation) (Array.length situation.(0)) MorpionMechanism.NOPLAYER
+	let a = Array.make_matrix (Array.length situation) (Array.length situation.(0)) MorpionMechanism.NOPLAYER
 	in for i = 0 to (Array.length situation)-1 do
 		for j=0 to (Array.length situation.(0))-1 do
 			a.(i).(j) <- situation.(i).(j)

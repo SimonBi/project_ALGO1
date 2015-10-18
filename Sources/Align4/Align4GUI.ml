@@ -1,7 +1,7 @@
 let squareSize = 100
 let chipSize = 40;;
 
-Graphics.open_graph (string_of_int((Align4Mechanism.cGrid+2)*squareSize)^"x"^string_of_int((Align4Mechanism.lGrid+1)*squareSize));;
+Graphics.open_graph (" "^string_of_int((Align4Mechanism.cGrid+2)*squareSize)^"x"^string_of_int((Align4Mechanism.lGrid+1)*squareSize));;
 Graphics.clear_graph();;
 
 let displayGame s =

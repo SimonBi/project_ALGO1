@@ -10,7 +10,7 @@ exception BadMove
 let lGrid = 3 and cGrid = 3 and toAlign = 3
 
 let getInitialSituation () =
-	let situation = Array.create_matrix lGrid cGrid NOPLAYER
+	let situation = Array.make_matrix lGrid cGrid NOPLAYER
 	in situation
 
 let getPossibleMoves situation =
@@ -32,7 +32,7 @@ let validMove p situation m =
 	Move(i,j) -> situation.(i).(j) = NOPLAYER
 	
 let copySituation situation =
-	let a = Array.create_matrix lGrid cGrid NOPLAYER
+	let a = Array.make_matrix lGrid cGrid NOPLAYER
 	in for i = 0 to lGrid-1 do
 		for j = 0 to cGrid-1 do
 			a.(i).(j) <- situation.(i).(j)
