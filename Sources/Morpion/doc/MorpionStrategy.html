@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<link rel="Start" href="index.html">
+<link rel="previous" href="MorpionMechanism.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="MorpionGame" rel="Chapter" href="MorpionGame.html">
+<link title="MorpionGUI" rel="Chapter" href="MorpionGUI.html">
+<link title="MorpionLearning" rel="Chapter" href="MorpionLearning.html">
+<link title="MorpionMechanism" rel="Chapter" href="MorpionMechanism.html">
+<link title="MorpionStrategy" rel="Chapter" href="MorpionStrategy.html"><title>MorpionStrategy</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="MorpionMechanism.html" title="MorpionMechanism">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Module <a href="type_MorpionStrategy.html">MorpionStrategy</a></h1>
+
+<pre><span class="keyword">module</span> MorpionStrategy: <code class="code">sig</code> <a href="MorpionStrategy.html">..</a> <code class="code">end</code></pre><div class="info module top">
+Module de stratégie<br>
+</div>
+<hr width="100%">
+
+<pre><span id="VALrandomStrategy"><span class="keyword">val</span> randomStrategy</span> : <code class="type"><a href="MorpionMechanism.html#TYPEplayer">MorpionMechanism.player</a> -><br>       <a href="MorpionMechanism.html#TYPEsituation">MorpionMechanism.situation</a> -> <a href="MorpionMechanism.html#TYPEmove">MorpionMechanism.move</a></code></pre><div class="info ">
+Stratégie random : étant donné un joueur et une situation, retourne un coup (possible) aléatoire<br>
+</div>
+
+<pre><span id="VALhumanPlayerStrategy"><span class="keyword">val</span> humanPlayerStrategy</span> : <code class="type"><a href="MorpionMechanism.html#TYPEplayer">MorpionMechanism.player</a> -><br>       <a href="MorpionMechanism.html#TYPEsituation">MorpionMechanism.situation</a> -> <a href="MorpionMechanism.html#TYPEmove">MorpionMechanism.move</a></code></pre><div class="info ">
+Stratégie pour le joueur humain : étant donné un joueur et une situation, retourne un coup récupéré à la souris<br>
+</div>
+
+<pre><span id="VALlearningStrategy"><span class="keyword">val</span> learningStrategy</span> : <code class="type"><a href="MorpionMechanism.html#TYPEplayer">MorpionMechanism.player</a> -><br>       <a href="MorpionMechanism.html#TYPEsituation">MorpionMechanism.situation</a> -> <a href="MorpionMechanism.html#TYPEmove">MorpionMechanism.move</a></code></pre><div class="info ">
+Stratégie apprise : étant donné un joueur et une situation, retourne le meilleur coup appris<br>
+</div>
+</body></html>

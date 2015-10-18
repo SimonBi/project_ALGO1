@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<link rel="Start" href="index.html">
+<link rel="previous" href="MorpionGUI.html">
+<link rel="next" href="MorpionMechanism.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="MorpionGame" rel="Chapter" href="MorpionGame.html">
+<link title="MorpionGUI" rel="Chapter" href="MorpionGUI.html">
+<link title="MorpionLearning" rel="Chapter" href="MorpionLearning.html">
+<link title="MorpionMechanism" rel="Chapter" href="MorpionMechanism.html">
+<link title="MorpionStrategy" rel="Chapter" href="MorpionStrategy.html"><title>MorpionLearning</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="MorpionGUI.html" title="MorpionGUI">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="MorpionMechanism.html" title="MorpionMechanism">Next</a>
+</div>
+<h1>Module <a href="type_MorpionLearning.html">MorpionLearning</a></h1>
+
+<pre><span class="keyword">module</span> MorpionLearning: <code class="code">sig</code> <a href="MorpionLearning.html">..</a> <code class="code">end</code></pre><div class="info module top">
+Module pour l'apprentissage<br>
+</div>
+<hr width="100%">
+
+<pre><span id="VALsaveFileName"><span class="keyword">val</span> saveFileName</span> : <code class="type">string</code></pre><div class="info ">
+chemin du fichier de sauvegarde<br>
+</div>
+
+<pre><span id="VALsaveToFile"><span class="keyword">val</span> saveToFile</span> : <code class="type">string -> unit</code></pre><div class="info ">
+fonction permettant de sauvegarder l'apprentissage<br>
+</div>
+
+<pre><span id="VALloadFromFile"><span class="keyword">val</span> loadFromFile</span> : <code class="type">string -> unit</code></pre><div class="info ">
+fonction permettant de charger un fichier d'apprentissage<br>
+</div>
+
+<pre><span id="VALbestPolitic"><span class="keyword">val</span> bestPolitic</span> : <code class="type"><a href="MorpionMechanism.html#TYPEsituation">MorpionMechanism.situation</a> -> <a href="MorpionMechanism.html#TYPEmove">MorpionMechanism.move</a></code></pre><div class="info ">
+fonction rendant le meilleur coup selon l'apprentissage dans la situation donnée en paramètre<br>
+</div>
+
+<pre><span id="VALlearnGames"><span class="keyword">val</span> learnGames</span> : <code class="type">int -> unit</code></pre><div class="info ">
+fonction apprenant une stratégie sur le nombre placé en paramètre de partie<br>
+</div>
+</body></html>

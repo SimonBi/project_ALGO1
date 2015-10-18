@@ -3,13 +3,157 @@
 <link rel="stylesheet" href="style.css" type="text/css">
 <meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
 <link rel="Start" href="index.html">
-<title>Index of values</title>
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="MorpionGame" rel="Chapter" href="MorpionGame.html">
+<link title="MorpionGUI" rel="Chapter" href="MorpionGUI.html">
+<link title="MorpionLearning" rel="Chapter" href="MorpionLearning.html">
+<link title="MorpionMechanism" rel="Chapter" href="MorpionMechanism.html">
+<link title="MorpionStrategy" rel="Chapter" href="MorpionStrategy.html"><title>Index of values</title>
 </head>
 <body>
 <div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
 &nbsp;</div>
 <h1>Index of values</h1>
 <table>
+<tr><td align="left"><br>B</td></tr>
+<tr><td><a href="MorpionLearning.html#VALbestPolitic">bestPolitic</a> [<a href="MorpionLearning.html">MorpionLearning</a>]</td>
+<td><div class="info">
+fonction rendant le meilleur coup selon l'apprentissage dans la situation donnée en paramètre
+</div>
+</td></tr>
+<tr><td align="left"><br>C</td></tr>
+<tr><td><a href="MorpionMechanism.html#VALcGrid">cGrid</a> [<a href="MorpionMechanism.html">MorpionMechanism</a>]</td>
+<td><div class="info">
+nombre de colonne de la grille
+</div>
+</td></tr>
+<tr><td align="left"><br>D</td></tr>
+<tr><td><a href="MorpionGUI.html#VALdisplayGame">displayGame</a> [<a href="MorpionGUI.html">MorpionGUI</a>]</td>
+<td><div class="info">
+fonction affichant la situation
+</div>
+</td></tr>
+<tr><td><a href="MorpionGUI.html#VALdisplayMove">displayMove</a> [<a href="MorpionGUI.html">MorpionGUI</a>]</td>
+<td><div class="info">
+fonction affichant le joueur du tour courant
+</div>
+</td></tr>
+<tr><td><a href="MorpionGUI.html#VALdisplayPlayerWin">displayPlayerWin</a> [<a href="MorpionGUI.html">MorpionGUI</a>]</td>
+<td><div class="info">
+fonction affichant le vainqueur lorsque la partie est terminée par un match non-nul
+</div>
+</td></tr>
+<tr><td><a href="MorpionGUI.html#VALdisplayTie">displayTie</a> [<a href="MorpionGUI.html">MorpionGUI</a>]</td>
+<td><div class="info">
+fonction affichant le match nul
+</div>
+</td></tr>
+<tr><td align="left"><br>G</td></tr>
+<tr><td><a href="MorpionGame.html#VALgame">game</a> [<a href="MorpionGame.html">MorpionGame</a>]</td>
+<td><div class="info">
+fonction de jeu prenant en paramètre un tableau de stratégies (qui à un joueur et une situation renvoie un coup à jouer) et un tableau de joueur (typiquement <code class="code">[|Player(0);Player(1)|]</code>)
+</div>
+</td></tr>
+<tr><td><a href="MorpionMechanism.html#VALgameEnded">gameEnded</a> [<a href="MorpionMechanism.html">MorpionMechanism</a>]</td>
+<td><div class="info">
+fonction renvoyant vrai si le situation placée en paramètre est terminale
+</div>
+</td></tr>
+<tr><td><a href="MorpionMechanism.html#VALgetInitialSituation">getInitialSituation</a> [<a href="MorpionMechanism.html">MorpionMechanism</a>]</td>
+<td><div class="info">
+fonction générant la grille initiale vide
+</div>
+</td></tr>
+<tr><td><a href="MorpionGUI.html#VALgetNearestMove">getNearestMove</a> [<a href="MorpionGUI.html">MorpionGUI</a>]</td>
+<td><div class="info">
+fonction permettant de récupérer un coup joué à la souris
+</div>
+</td></tr>
+<tr><td><a href="MorpionMechanism.html#VALgetPossibleMoves">getPossibleMoves</a> [<a href="MorpionMechanism.html">MorpionMechanism</a>]</td>
+<td><div class="info">
+fonction rendant la liste des coups possibles dans la situation passée en paramètre
+</div>
+</td></tr>
+<tr><td align="left"><br>H</td></tr>
+<tr><td><a href="MorpionMechanism.html#VALhasWin">hasWin</a> [<a href="MorpionMechanism.html">MorpionMechanism</a>]</td>
+<td><div class="info">
+fonction renvoyant vrai si le joueur a gagné dans la situation
+</div>
+</td></tr>
+<tr><td><a href="MorpionStrategy.html#VALhumanPlayerStrategy">humanPlayerStrategy</a> [<a href="MorpionStrategy.html">MorpionStrategy</a>]</td>
+<td><div class="info">
+Stratégie pour le joueur humain : étant donné un joueur et une situation, retourne un coup récupéré à la souris
+</div>
+</td></tr>
+<tr><td align="left"><br>L</td></tr>
+<tr><td><a href="MorpionMechanism.html#VALlGrid">lGrid</a> [<a href="MorpionMechanism.html">MorpionMechanism</a>]</td>
+<td><div class="info">
+nombre de ligne de la grille
+</div>
+</td></tr>
+<tr><td><a href="MorpionLearning.html#VALlearnGames">learnGames</a> [<a href="MorpionLearning.html">MorpionLearning</a>]</td>
+<td><div class="info">
+fonction apprenant une stratégie sur le nombre placé en paramètre de partie
+</div>
+</td></tr>
+<tr><td><a href="MorpionStrategy.html#VALlearningStrategy">learningStrategy</a> [<a href="MorpionStrategy.html">MorpionStrategy</a>]</td>
+<td><div class="info">
+Stratégie apprise : étant donné un joueur et une situation, retourne le meilleur coup appris
+</div>
+</td></tr>
+<tr><td><a href="MorpionLearning.html#VALloadFromFile">loadFromFile</a> [<a href="MorpionLearning.html">MorpionLearning</a>]</td>
+<td><div class="info">
+fonction permettant de charger un fichier d'apprentissage
+</div>
+</td></tr>
+<tr><td align="left"><br>O</td></tr>
+<tr><td><a href="MorpionMechanism.html#VALotherPlayer">otherPlayer</a> [<a href="MorpionMechanism.html">MorpionMechanism</a>]</td>
+<td><div class="info">
+fonction rendant le joueur adverse au joueur placé en paramètre
+</div>
+</td></tr>
+<tr><td align="left"><br>P</td></tr>
+<tr><td><a href="MorpionMechanism.html#VALplay">play</a> [<a href="MorpionMechanism.html">MorpionMechanism</a>]</td>
+<td><div class="info">
+fonction jouant le coup pour le joueur dans la situation donnée en paramètre et renvoyant la nouvelle situation
+</div>
+</td></tr>
+<tr><td align="left"><br>R</td></tr>
+<tr><td><a href="MorpionStrategy.html#VALrandomStrategy">randomStrategy</a> [<a href="MorpionStrategy.html">MorpionStrategy</a>]</td>
+<td><div class="info">
+Stratégie random : étant donné un joueur et une situation, retourne un coup (possible) aléatoire
+</div>
+</td></tr>
+<tr><td align="left"><br>S</td></tr>
+<tr><td><a href="MorpionLearning.html#VALsaveFileName">saveFileName</a> [<a href="MorpionLearning.html">MorpionLearning</a>]</td>
+<td><div class="info">
+chemin du fichier de sauvegarde
+</div>
+</td></tr>
+<tr><td><a href="MorpionLearning.html#VALsaveToFile">saveToFile</a> [<a href="MorpionLearning.html">MorpionLearning</a>]</td>
+<td><div class="info">
+fonction permettant de sauvegarder l'apprentissage
+</div>
+</td></tr>
+<tr><td align="left"><br>T</td></tr>
+<tr><td><a href="MorpionMechanism.html#VALtie">tie</a> [<a href="MorpionMechanism.html">MorpionMechanism</a>]</td>
+<td><div class="info">
+fonction renvoyant vrai s'il n'y a plus de coups possibles (si personne n'a gagné alors c'est un match nul)
+</div>
+</td></tr>
+<tr><td><a href="MorpionMechanism.html#VALtoAlign">toAlign</a> [<a href="MorpionMechanism.html">MorpionMechanism</a>]</td>
+<td><div class="info">
+nombre de pion à aligner
+</div>
+</td></tr>
+<tr><td align="left"><br>V</td></tr>
+<tr><td><a href="MorpionMechanism.html#VALvalidMove">validMove</a> [<a href="MorpionMechanism.html">MorpionMechanism</a>]</td>
+<td><div class="info">
+fonction rendant vrai le coup est possible pour le joueur dans la situation
+</div>
+</td></tr>
 </table>
 </body>
 </html>
