@@ -36,10 +36,10 @@ let alphabeta player situation =
     and b' = ref b in
     let bst_mv = ref (MorpionMechanism.Move(-1,-1)) in
     if MorpionMechanism.gameEnded s || depth = 0 then 
-      ( !bst_mv, evalSituation player situation)
+      ( !bst_mv, evalSituation player s)
     else ( try ( 
       let l = MorpionMechanism.getPossibleMoves s in
-      if player = player' then (
+      if player <> player' then (
         let v = ref infinity in
         for i = 0 to ((List.length l)-1)
         do
