@@ -39,6 +39,7 @@ let alphabeta player situation =
       ( !bst_mv, evalSituation player s)
     else ( try ( 
       let l = MorpionMechanism.getPossibleMoves s in
+      bst_mv := List.hd l;
       if player <> player' then (
         let v = ref infinity in
         for i = 0 to ((List.length l)-1)

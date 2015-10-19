@@ -22,8 +22,9 @@ let alphabeta evalSituation player situation =
     let bst_mv = ref (Align4Mechanism.Move (-1)) in
     if Align4Mechanism.gameEnded s || depth = 0 then 
       ( !bst_mv, evalSituation s player)
-    else ( try ( 
+    else ( try (
       let l = Align4Mechanism.getPossibleMoves s in
+      bst_mv := List.hd l;
       if player <> player' then (
         let v = ref infinity in
         for i = 0 to ((List.length l)-1)
@@ -53,7 +54,6 @@ let alphabeta evalSituation player situation =
       )
       with | Sprune res -> res )
   in
-  print_string "lel";
   fst (alpbet situation neg_infinity infinity maxDepth player)
 
 
