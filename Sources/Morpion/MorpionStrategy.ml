@@ -47,7 +47,7 @@ let alphabeta player situation =
           let s' = MorpionMechanism.play player' s (List.nth l i)
           and mv = (List.nth l i) in
           v := min !v (snd (alpbet s' !a' !b' (depth-1) (MorpionMechanism.otherPlayer player')));
-          if !v <= !a' then raise (Sprune ( !bst_mv, !v));
+          if !v <= !a' then raise (Sprune (mv, !v));
           if !b' > !v then bst_mv := mv;
           b' := min !b' !v
         done;
@@ -60,7 +60,7 @@ let alphabeta player situation =
           let s' = MorpionMechanism.play player' s (List.nth l i)
           and mv = (List.nth l i) in
           v := max !v (snd (alpbet s' !a' !b' (depth-1) (MorpionMechanism.otherPlayer player')));
-          if !v >= !b' then raise (Sprune ( !bst_mv, !v));
+          if !v >= !b' then raise (Sprune (mv, !v));
           if !a' < !v then bst_mv := mv;
           a' := max !a' !v
         done;
