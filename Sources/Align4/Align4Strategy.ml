@@ -10,7 +10,7 @@ let humanPlayerStrategy player s =
 	Align4GUI.displayMove player;
 	Align4GUI.getNearestMove player s
 	
-let maxDepth = 6
+let maxDepth = 7
 
 type state={situation : Align4Mechanism.situation;depth : int;player : Align4Mechanism.player}
 
